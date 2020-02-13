@@ -1,0 +1,4 @@
+jurnal
+asimetris kurang cepat tapi aman
+simetris gk aman tapi cepat
+jurnal rsa & aes
