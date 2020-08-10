@@ -184,7 +184,7 @@ def menu_EncSK():
     # Label to enter Public Key
     public_keyLabel = Label(menu_EncSK, text="Please enter the Public Key:").pack(pady=10)
     # Text Widget to enter the Public Key
-    public_keyText = Text(menu_EncSK, width=50, height=7)
+    public_keyText = Text(menu_EncSK, width=65, height=7)
     public_keyText.pack(pady=10)
     # Button to encrypt the Session Key
     encryptSKButton = Button(menu_EncSK, text="Encrypt", font="Helvetica, 15",
@@ -193,7 +193,7 @@ def menu_EncSK():
     # Label to show the encrypted Session Key
     encSKLabel = Label(menu_EncSK, text="Encrypted Session Key:").pack()
     # Text Widget to show the encrypted Session Key
-    encryptedSKText = Text(menu_EncSK, width=50, height=7)
+    encryptedSKText = Text(menu_EncSK, width=65, height=5)
     encryptedSKText.pack(pady=10)
 
 
@@ -244,21 +244,22 @@ def menu_DecSK():
     # Label to enter the Encrypted Session Key
     encryptedSKLabel = Label(menu_DecSK, text="Please enter the encrypted Session Key:").pack(pady=10)
     # Text Widget to enter the Encrypted Session Key
-    encryptedSKText = Text(menu_DecSK, width=50, height=7)
+    encryptedSKText = Text(menu_DecSK, width=65, height=5)
     encryptedSKText.pack()
     # Label to enter the Private Key for Decryption
     private_keyLabel = Label(menu_DecSK, text="Please enter the Private Key:")
     private_keyLabel.pack()
     # Text Widget to enter the Private Key for decryption
-    private_keyText = Text(menu_DecSK, width=50, height=10)
+    private_keyText = Text(menu_DecSK, width=65, height=16)
     private_keyText.pack(pady=10)
     # Button to Decrypt the Encrypted Session Key using the RSA Private Key
-    decryptSKButton = Button(menu_DecSK, text="Decrypt", command=decrypt_session_key)
+    decryptSKButton = Button(menu_DecSK, text="Decrypt", font="Helvetica, 15",
+                             width=20, height=2, command=decrypt_session_key)
     decryptSKButton.pack()
     # Label to show the Decrypted Session Key
     DecSKLabel = Label(menu_DecSK, text="Decrypted Session Key:").pack(pady=10)
     # Text Widget to show the Decrypted Session Key
-    decryptedSKText = Text(menu_DecSK, width=50, height=10)
+    decryptedSKText = Text(menu_DecSK, width=45, height=2)
     decryptedSKText.pack(pady=10)
     
 
@@ -384,8 +385,8 @@ def menu_MD():
 
 # Main Menu
 # Create new label
-labelmenu = Label(root, text="Hybrid Cryptography Program Menu",
-                  font="Helvetica, 20").pack(pady=25)
+labelmenu = Label(root, text="Hybrid Cryptography Program Main Menu",
+                  font="Helvetica, 15").pack(pady=25)
 
 # Menu Button
 SKEButton = Button(root, text="Session Key Exhange",
