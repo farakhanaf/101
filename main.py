@@ -1,4 +1,4 @@
-# Import module for tkinter GUI
+# Import tkinter for GUI
 from tkinter import *
 import tkinter as tk
 # Import module for AES Symmetrical Cryptography 
@@ -6,8 +6,8 @@ from cryptography.fernet import Fernet
 # Import module for RSA Asymmetrical Cryptography
 from Cryptodome.PublicKey import RSA
 from Cryptodome.Cipher import PKCS1_OAEP
+# Import binascii module for conversion
 import binascii
-#import rsa # Module for RSA Asymmetric Cryptography
 
 
 # Create new variable to call tkinter window
